@@ -5,7 +5,7 @@ import { ICON_NAMES, ROUTE_NAMES } from '@/enums'
 import { WritableComputedRef } from 'vue'
 import { EthereumProvider } from '@/types'
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   export interface ComponentCustomProperties {
     $routes: typeof ROUTE_NAMES
     $icons: typeof ICON_NAMES
